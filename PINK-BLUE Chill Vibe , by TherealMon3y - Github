@@ -1,0 +1,22 @@
+// Created by therealmon3y
+document.documentElement.style.setProperty('--colours-primary-gradient-start', 'rgb(255, 192, 203)'); // Pink
+document.documentElement.style.setProperty('--colours-primary-gradient-stop', 'rgb(0, 0, 255)'); // Blue
+
+// Ensure the background uses the updated variables
+document.body.style.background = 'linear-gradient(to right, var(--colours-primary-gradient-start) 0%, var(--colours-primary-gradient-stop) 100%) !important';
+
+// Create a new div element for the credits
+var creditDiv = document.createElement('div');
+creditDiv.innerHTML = 'Created by therealmon3y';
+creditDiv.style.position = 'fixed';
+creditDiv.style.left = '0';
+creditDiv.style.bottom = '0';
+creditDiv.style.backgroundColor = 'rgba(0, 0, 0, 0.8)';
+creditDiv.style.color = 'white';
+creditDiv.style.padding = '10px';
+creditDiv.style.fontSize = '16px';
+creditDiv.style.borderTopRightRadius = '10px';
+creditDiv.style.zIndex = '1000'; // Ensure it's on top of other elements
+
+// Append the new div to the body
+document.body.appendChild(creditDiv);
