@@ -1,0 +1,31 @@
+// Created by TherealMon3y
+const styleElement = document.createElement('style');
+styleElement.textContent = `
+@keyframes rainbow {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+body {
+    background: linear-gradient(270deg, #ff0000, #ffa500, #ffff00, #008000, #0000ff, #4b0082, #ee82ee);
+    background-size: 1400% 1400%;
+    animation: rainbow 20s ease infinite;
+}
+`;
+document.head.appendChild(styleElement);
+
+// Create a new div element for the credits
+var creditDiv = document.createElement('div');
+creditDiv.innerHTML = 'Created by therealmon3y';
+creditDiv.style.position = 'fixed';
+creditDiv.style.left = '0';
+creditDiv.style.bottom = '0';
+creditDiv.style.backgroundColor = 'rgba(0, 0, 0, 0.8)';
+creditDiv.style.color = 'white';
+creditDiv.style.padding = '10px';
+creditDiv.style.fontSize = '16px';
+creditDiv.style.borderTopRightRadius = '10px';
+creditDiv.style.zIndex = '1000'; // Ensure it's on top of other elements
+
+// Append the new div to the body
+document.body.appendChild(creditDiv);
