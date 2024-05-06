@@ -6,7 +6,7 @@ Please follow , it really helps me out a-lot
 # Credits
 **it's all been created by therealmon3y which is me**
 
-#How can I Do it?
+# How can I Do it?
 **its really easy**
 
 Instructions to apply this script:
